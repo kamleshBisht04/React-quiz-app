@@ -1,7 +1,9 @@
+import StartScreen from "./components/startscreen/StartScreen";
+
 function App() {
   return (
     <div>
-      <h1 class="bg-amber-200 text-3xl font-bold underline">Hello world!</h1>
+      <StartScreen />
     </div>
   );
 }
