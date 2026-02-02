@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.png";
+import { topics } from "../../const/const";
 
 function StartScreen() {
   return (
@@ -25,6 +26,18 @@ function StartScreen() {
           Select topic below to start your Quiz.
         </p>
       </div>
+
+      {/* <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        {topics.map((topic) => (
+          <div
+            key={topic.id}
+            className="flex cursor-pointer flex-col items-center gap-2 rounded-lg border p-4 hover:bg-gray-100"
+          >
+            <span className="text-3xl text-blue-500">{topic.icon}</span>
+            <p className="text-sm font-medium">{topic.name}</p>
+          </div>
+        ))}
+      </div> */}
     </div>
   );
 }
