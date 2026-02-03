@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.png";
+import quize from "../../assets/quize.jpg";
 import { Topics } from "../../const/const";
 
 function StartScreen() {
@@ -15,15 +16,21 @@ function StartScreen() {
           <p>
             <strong className="sm:text-3xl md:text-5xl lg:text-6xl">
               <span className="text-yellow-300 sm:text-6xl md:text-7xl">I</span>
-              ntellect Quest
+              ntellect
             </strong>
           </p>
+
+          <img
+            className="h-12 w-auto sm:h-20 md:h-24"
+            src={quize}
+            alt="quiz logo"
+          />
         </div>
         {/* welcome section */}
         <div className="flex flex-col items-center justify-center gap-5 md:gap-16">
           <h1 className="font-semibold uppercase sm:text-3xl md:text-4xl lg:text-5xl">
             Welcome to Intellect
-            <span className="font-bold text-sky-500"> quest</span>
+            <span className="font-bold text-sky-500"> quiz</span>
           </h1>
           <p className="font-Inter font-bold text-blue-900 sm:text-2xl md:text-4xl">
             Select topic below to start your Quiz.
