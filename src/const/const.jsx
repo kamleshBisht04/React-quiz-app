@@ -9,7 +9,7 @@ import { FaAngular } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import { GiGiftOfKnowledge } from "react-icons/gi";
 
-export const topics = [
+export const Topics = [
   { id: 1, name: "React", icon: <FaReact color="#61DAFB" /> },
   { id: 2, name: "JavaScript", icon: <DiJavascript color="#F7DF1E" /> },
   { id: 3, name: "Python", icon: <SiPython color="#3776AB" /> },
@@ -18,10 +18,10 @@ export const topics = [
   { id: 6, name: "HTML", icon: <IoLogoHtml5 color="#E34F26" /> },
   { id: 7, name: "CSS", icon: <FaCss3 color="#1572B6" /> },
   { id: 8, name: "Angular", icon: <FaAngular color="#DD0031" /> },
-  { id: 9, name: "Django", icon: <SiDjango color="#092E20" /> },
+  { id: 9, name: "Django", icon: <SiDjango color="#20a270" /> },
   {
     id: 10,
-    name: "General Knowledge",
+    name: "GK",
     icon: <GiGiftOfKnowledge color="#8B5CF6" />,
   },
 ];
