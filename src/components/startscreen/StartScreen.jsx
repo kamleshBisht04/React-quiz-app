@@ -34,17 +34,21 @@ function StartScreen() {
           {Topics.map((topic) => (
             <button
               key={topic.id}
-              className="flex h-30 transform items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-transform duration-200 hover:scale-104 hover:bg-white hover:shadow-2xl focus:bg-white focus:ring-2 focus:ring-green-600 focus:outline-none active:scale-95"
+              className="flex h-28 items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:bg-white hover:shadow-2xl focus:bg-white focus:ring-2 focus:ring-green-600 focus:outline-none active:scale-95"
             >
-              <span className="text-3xl sm:text-4xl md:text-5xl">
+              <span className="text-4xl sm:text-5xl md:text-6xl">
                 {topic.icon}
               </span>
               <p className="text-2xl">{topic.name}</p>
             </button>
           ))}
         </div>
-
         {/* start section */}
+        <div>
+          <button className="h-16 w-64 rounded-xl bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 text-2xl font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 hover:shadow-2xl focus:ring-purple-400/50 focus:outline-none active:scale-95">
+            Continue
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -35,3 +35,7 @@ body {
   background-color: var(--color-light);
   padding: 3.2rem;
 }
+
+button{
+  cursor: pointer;
+}
