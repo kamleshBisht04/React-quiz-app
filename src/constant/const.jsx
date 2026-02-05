@@ -9,6 +9,7 @@ import { FaAngular } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import { GiGiftOfKnowledge } from "react-icons/gi";
 
+
 export const Topics = [
   { id: 1, name: "React", icon: <FaReact color="#61DAFB" /> },
   { id: 2, name: "JavaScript", icon: <DiJavascript color="#F7DF1E" /> },

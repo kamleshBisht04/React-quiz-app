@@ -1,9 +1,13 @@
+import QuizInfo from "./components/quizinfo/quizInfo";
 import StartScreen from "./components/startscreen/StartScreen";
+import { useQuiz } from "./context/QuizContext";
 
 function App() {
+  const { screen } = useQuiz();
   return (
-    <div>
-      <StartScreen />
+    <div >
+      {screen === "start" && <StartScreen />}
+      {screen === "info" && <QuizInfo />}
     </div>
   );
 }

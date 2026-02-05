@@ -1,15 +1,19 @@
 import logo from "../../assets/logo.png";
 import quize from "../../assets/quize.jpg";
-import { Topics } from "../../const/const";
+import { Topics } from "../../constant/const";
+import { useQuiz } from "../../context/QuizContext";
+import { FaGooglePlay } from "react-icons/fa6";
 
 function StartScreen() {
+  const { topic, setTopic, setScreen } = useQuiz();
+
   return (
-    <div className="flex w-full items-center justify-center">
-      <div className="flex w-[80%] flex-col items-center justify-center gap-6 md:gap-16">
+    <div className="flex h-screen flex-col items-center justify-center">
+      <div className="mx-auto flex h-[90vh] w-[70%] flex-col items-center gap-10 md:mt-16">
         {/* logo */}
         <div className="flex w-full items-center justify-center gap-2">
           <img
-            className="h-16 w-auto sm:h-20 md:h-28 lg:h-36 xl:h-40"
+            className="h-16 w-auto sm:h-20 md:h-24"
             src={logo}
             alt="quiz logo"
           />
@@ -37,12 +41,13 @@ function StartScreen() {
           </p>
         </div>
         {/* button section */}
-        <div className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 md:gap-10">
           {Topics.map((topic) => (
             <button
               key={topic.id}
               value={topic.name}
-              className="flex h-28 items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:bg-white hover:shadow-2xl focus:bg-white focus:ring-2 focus:ring-green-600 focus:outline-none active:scale-95"
+              onClick={() => setTopic(topic.name)}
+              className="flex h-20 w-50 items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:bg-white hover:shadow-2xl focus:bg-white focus:text-green-600 focus:ring-1 focus:ring-green-600 focus:outline-none active:scale-95 sm:h-20 md:h-24 md:w-55 md:gap-2"
             >
               <span className="text-4xl sm:text-5xl md:text-6xl">
                 {topic.icon}
@@ -52,9 +57,16 @@ function StartScreen() {
           ))}
         </div>
         {/* start section */}
-        <div>
-          <button className="h-16 w-64 rounded-xl bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 px-8 py-3 text-2xl font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 hover:shadow-2xl focus:ring-purple-400/50 focus:outline-none active:scale-95">
-            Continue
+        <div className="w-full h-38  flex items-center justify-center ">
+          <button
+            onClick={() => setScreen("info")}
+            className={`flex h-16 w-64  items-center justify-around rounded-xl px-8 py-3 text-2xl font-semibold text-white shadow-lg transition-all duration-300 ease-in-out ${
+              topic
+                ? "bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-105 hover:shadow-2xl"
+                : "cursor-not-allowed bg-gray-300"
+            } `}
+          >
+            Continue <FaGooglePlay />
           </button>
         </div>
       </div>

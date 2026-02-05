@@ -31,16 +31,13 @@ html {
 }
 
 body {
+  /* margin: 3.2rem; */
   color: var(--color-text-primary);
   background-color: var(--color-light);
-  padding: 3.2rem;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-
 /*  */
-
- 
