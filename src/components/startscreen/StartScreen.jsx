@@ -41,6 +41,7 @@ function StartScreen() {
           {Topics.map((topic) => (
             <button
               key={topic.id}
+              value={topic.name}
               className="flex h-28 items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:bg-white hover:shadow-2xl focus:bg-white focus:ring-2 focus:ring-green-600 focus:outline-none active:scale-95"
             >
               <span className="text-4xl sm:text-5xl md:text-6xl">

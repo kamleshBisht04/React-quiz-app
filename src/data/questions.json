@@ -1,0 +1,2364 @@
+{
+  "quizData": [
+    {
+      "id": "react",
+      "title": "React",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is React?",
+          "options": [
+            "A JavaScript library",
+            "A framework",
+            "A database",
+            "A programming language"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "What is JSX?",
+          "options": [
+            "JavaScript XML",
+            "JSON XML",
+            "Java Syntax Extension",
+            "React HTML"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which command is used to create a React app?",
+          "options": [
+            "npm create-react-app",
+            "npx create-react-app",
+            "npm react-app",
+            "react-new-app"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "Which hook is used to manage state?",
+          "options": ["useRef", "useEffect", "useState", "useMemo"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "React components must return?",
+          "options": ["HTML", "JSX", "CSS", "JSON"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "What is the purpose of props?",
+          "options": [
+            "Store data",
+            "Pass data to components",
+            "Handle events",
+            "Manage lifecycle"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which hook is used for side effects?",
+          "options": ["useState", "useEffect", "useContext", "useReducer"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "Keys in React lists are used to?",
+          "options": [
+            "Style elements",
+            "Improve performance",
+            "Identify elements uniquely",
+            "Handle events"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "What happens when state changes?",
+          "options": [
+            "Component reloads page",
+            "Component re-renders",
+            "DOM reloads fully",
+            "Nothing happens"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "What is lifting state up?",
+          "options": [
+            "Moving state to parent component",
+            "Removing state",
+            "Duplicating state",
+            "Using Redux"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is Context API used for?",
+          "options": [
+            "Routing",
+            "Global state management",
+            "Styling",
+            "Fetching data"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which hook replaces componentDidMount?",
+          "options": ["useMemo", "useEffect", "useRef", "useCallback"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "What is React Fragment used for?",
+          "options": [
+            "Wrapping elements without extra DOM",
+            "Handling errors",
+            "Creating portals",
+            "Managing state"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "What is prop drilling?",
+          "options": [
+            "Passing props through many components",
+            "Removing props",
+            "Using Context",
+            "Using Redux"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which hook is used to access DOM elements?",
+          "options": ["useState", "useEffect", "useRef", "useMemo"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "What is useReducer mainly used for?",
+          "options": [
+            "Simple state",
+            "Complex state logic",
+            "Routing",
+            "Styling"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "What does useMemo do?",
+          "options": [
+            "Memoize functions",
+            "Memoize values",
+            "Handle effects",
+            "Access DOM"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "What does useCallback return?",
+          "options": [
+            "A memoized value",
+            "A memoized function",
+            "A state",
+            "An effect"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "What is reconciliation in React?",
+          "options": [
+            "Updating state",
+            "Comparing virtual DOM",
+            "Handling events",
+            "Rendering JSX"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Why Virtual DOM is used?",
+          "options": [
+            "Faster UI updates",
+            "Better styling",
+            "Routing",
+            "Security"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "What is React.memo used for?",
+          "options": [
+            "State management",
+            "Prevent unnecessary re-renders",
+            "Handling effects",
+            "Routing"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "What is a controlled component?",
+          "options": [
+            "Component with local state",
+            "Component controlled by DOM",
+            "Component controlled by React state",
+            "Stateless component"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "What is the purpose of keys in React?",
+          "options": [
+            "Styling",
+            "Security",
+            "Efficient re-rendering",
+            "Event handling"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which lifecycle runs once in class component?",
+          "options": [
+            "componentDidUpdate",
+            "componentWillUnmount",
+            "componentDidMount",
+            "render"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What is the main advantage of hooks?",
+          "options": [
+            "Better styling",
+            "Using state without classes",
+            "Faster DOM",
+            "Routing"
+          ],
+          "correctOption": 1,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is JavaScript?",
+          "options": [
+            "A programming language",
+            "A markup language",
+            "A database",
+            "An operating system"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which keyword is used to declare a variable?",
+          "options": ["var", "let", "const", "All of the above"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which type is NOT primitive in JavaScript?",
+          "options": ["String", "Number", "Object", "Boolean"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "Which method converts JSON to JavaScript object?",
+          "options": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.object()",
+            "JSON.convert()"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which symbol is used for single-line comments?",
+          "options": ["<!-- -->", "/* */", "//", "#"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "What is the result of typeof null?",
+          "options": ["null", "undefined", "object", "number"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which operator is used to compare value and type?",
+          "options": ["==", "=", "===", "!="],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "Which function is used to print output?",
+          "options": ["console.log()", "print()", "log()", "document.print()"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which loop executes at least once?",
+          "options": ["for", "while", "do...while", "foreach"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which keyword is used to define a function?",
+          "options": ["func", "define", "function", "method"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is NaN?",
+          "options": [
+            "Not a Number",
+            "Null and Number",
+            "Negative Number",
+            "New Array Node"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which array method adds element at the end?",
+          "options": ["push()", "pop()", "shift()", "unshift()"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which method removes last array element?",
+          "options": ["push()", "shift()", "pop()", "slice()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "What is closure?",
+          "options": [
+            "Function inside function",
+            "Function with preserved scope",
+            "Async function",
+            "Callback function"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which keyword stops loop execution?",
+          "options": ["stop", "exit", "break", "return"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which method is used to merge arrays?",
+          "options": ["concat()", "join()", "merge()", "combine()"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "What is event bubbling?",
+          "options": [
+            "Event moves from child to parent",
+            "Event moves from parent to child",
+            "Multiple events at once",
+            "Event cancellation"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which keyword is used for async function?",
+          "options": ["sync", "await", "async", "promise"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "What does map() return?",
+          "options": ["Single value", "New array", "Boolean", "Original array"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which object handles dates in JavaScript?",
+          "options": ["Time", "Date", "Clock", "Moment"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which keyword is used to handle errors?",
+          "options": ["catch", "error", "handle", "exception"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "What is a Promise?",
+          "options": [
+            "An object representing future value",
+            "A callback",
+            "An event",
+            "A loop"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which method converts array to string?",
+          "options": ["join()", "map()", "filter()", "reduce()"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "What is hoisting?",
+          "options": [
+            "Moving variables to top",
+            "Deleting variables",
+            "Copying variables",
+            "Blocking scope"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "Which statement is used to return value?",
+          "options": ["break", "continue", "return", "yield"],
+          "correctOption": 2,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Python",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which of the following best describes Python?",
+          "options": [
+            "Compiled and statically typed",
+            "Interpreted and dynamically typed",
+            "Only object-oriented",
+            "Low-level language"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "What will be the output of: bool([])?",
+          "options": ["True", "False", "None", "Error"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which data structure maintains insertion order in Python 3.7+?",
+          "options": ["Set", "Tuple", "Dictionary", "List only"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "What does *args allow you to do?",
+          "options": [
+            "Pass keyword arguments",
+            "Pass variable number of arguments",
+            "Return multiple values",
+            "Create generators"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which keyword is used to create a generator?",
+          "options": ["return", "yield", "async", "gen"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "What is the output of: type(lambda x: x)?",
+          "options": ["function", "lambda", "object", "method"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which of the following is NOT mutable?",
+          "options": ["List", "Set", "Dictionary", "Tuple"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What does the 'with' statement ensure?",
+          "options": [
+            "Loop execution",
+            "Exception handling",
+            "Resource management",
+            "Thread creation"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "What is the output of: 3 == 3.0?",
+          "options": ["True", "False", "Error", "None"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which function is used to check iterable elements?",
+          "options": ["any()", "all()", "both A and B", "check()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is the scope of variables inside a function?",
+          "options": ["Global", "Local", "Module", "Built-in"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which decorator is used to define a static method?",
+          "options": ["@class", "@staticmethod", "@property", "@method"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "What will be the output of: [i*i for i in range(3)]?",
+          "options": ["[1,4,9]", "[0,1,4]", "[0,1,2]", "[1,2,3]"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which keyword is used to re-raise an exception?",
+          "options": ["throw", "raise", "except", "error"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "What does __init__ method do?",
+          "options": [
+            "Deletes object",
+            "Initializes object",
+            "Creates class",
+            "Calls destructor"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which module is used for regular expressions?",
+          "options": ["regex", "re", "pyregex", "pattern"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "What is the output of: len({1,2,2,3})?",
+          "options": ["4", "3", "2", "Error"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which function converts iterable into list?",
+          "options": ["array()", "list()", "tuple()", "iter()"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "What does pass keyword do?",
+          "options": [
+            "Skips loop",
+            "Ends program",
+            "Acts as placeholder",
+            "Raises error"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which of the following supports method overloading?",
+          "options": [
+            "Python directly",
+            "Using default arguments",
+            "Using interfaces",
+            "Not possible"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "What is the output of: 'Python'[1:4]?",
+          "options": ["Pyt", "yth", "tho", "ytho"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which keyword makes a variable global?",
+          "options": ["public", "global", "extern", "static"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "What does map() return?",
+          "options": ["List", "Tuple", "Iterator", "Set"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which function is used to sort a list in-place?",
+          "options": ["sorted()", "order()", "sort()", "arrange()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What is the output of: isinstance(5, int)?",
+          "options": ["True", "False", "Error", "None"],
+          "correctOption": 0,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "title": "SQL",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does SQL stand for?",
+          "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "Sequential Query Language",
+            "Standard Query Logic"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which SQL statement is used to extract data from a table?",
+          "options": ["GET", "FETCH", "SELECT", "EXTRACT"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which clause is used to filter records?",
+          "options": ["WHERE", "HAVING", "ORDER BY", "GROUP BY"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "What is the purpose of GROUP BY?",
+          "options": [
+            "Sort rows",
+            "Group rows with same values",
+            "Filter rows",
+            "Join tables"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which function returns the number of rows?",
+          "options": ["SUM()", "TOTAL()", "COUNT()", "NUMBER()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "Which SQL keyword is used to sort the result-set?",
+          "options": ["SORT BY", "ORDER BY", "GROUP BY", "ARRANGE"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which join returns all records from both tables?",
+          "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What does INNER JOIN return?",
+          "options": [
+            "All records",
+            "Only matching records",
+            "Left table records",
+            "Right table records"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which clause is used with aggregate functions?",
+          "options": ["WHERE", "HAVING", "LIMIT", "DISTINCT"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "What does DISTINCT do?",
+          "options": [
+            "Sort data",
+            "Remove duplicate rows",
+            "Group data",
+            "Filter rows"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "Which command is used to remove all records from a table?",
+          "options": ["DROP", "DELETE", "TRUNCATE", "REMOVE"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "What is the difference between DELETE and TRUNCATE?",
+          "options": [
+            "No difference",
+            "DELETE removes structure",
+            "TRUNCATE is faster and non-rollback",
+            "DELETE is faster"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which SQL constraint ensures unique values?",
+          "options": ["PRIMARY KEY", "FOREIGN KEY", "UNIQUE", "CHECK"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which constraint uniquely identifies each record?",
+          "options": ["UNIQUE", "PRIMARY KEY", "INDEX", "NOT NULL"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "What is a foreign key?",
+          "options": [
+            "Primary key of same table",
+            "Key used for encryption",
+            "Primary key from another table",
+            "Unique key"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which normal form removes partial dependency?",
+          "options": ["1NF", "2NF", "3NF", "BCNF"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Which command is used to add a new column?",
+          "options": ["UPDATE", "ALTER", "MODIFY", "INSERT"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "What does the LIKE operator do?",
+          "options": [
+            "Exact match",
+            "Pattern matching",
+            "Numeric comparison",
+            "Join tables"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which wildcard represents multiple characters?",
+          "options": ["_", "%", "*", "#"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which command is used to remove a table?",
+          "options": ["DELETE", "REMOVE", "DROP", "CLEAR"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "What is an index used for?",
+          "options": [
+            "Store data",
+            "Speed up queries",
+            "Create relationships",
+            "Ensure integrity"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which function returns the highest value?",
+          "options": ["TOP()", "MAX()", "HIGH()", "GREATEST()"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which SQL keyword is used to limit rows?",
+          "options": ["LIMIT", "TOP", "ROWNUM", "All of the above"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which transaction command saves changes permanently?",
+          "options": ["ROLLBACK", "SAVEPOINT", "COMMIT", "END"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What does ACID stand for?",
+          "options": [
+            "Atomicity, Consistency, Isolation, Durability",
+            "Accuracy, Clarity, Integrity, Durability",
+            "Atomicity, Control, Isolation, Data",
+            "Access, Control, Integrity, Data"
+          ],
+          "correctOption": 0,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "title": "Java",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the main feature of Java?",
+          "options": [
+            "Platform dependent",
+            "Platform independent",
+            "Low level language",
+            "Only object oriented"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which component is responsible for running Java bytecode?",
+          "options": ["JDK", "JRE", "JVM", "Compiler"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which keyword is used to inherit a class in Java?",
+          "options": ["implements", "inherits", "extends", "super"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "What is method overloading?",
+          "options": [
+            "Same method name with different parameters",
+            "Same return type only",
+            "Same parameters only",
+            "Multiple classes with same name"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which access modifier allows visibility only within the same package?",
+          "options": ["private", "protected", "default", "public"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "Which keyword prevents inheritance?",
+          "options": ["static", "final", "private", "const"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which collection does NOT allow duplicate elements?",
+          "options": ["List", "ArrayList", "Set", "LinkedList"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What is the default value of an instance variable?",
+          "options": ["0", "null", "Depends on type", "Undefined"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which interface is implemented by all map classes?",
+          "options": ["Collection", "Map", "HashMap", "Iterable"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "What is autoboxing?",
+          "options": [
+            "Manual type conversion",
+            "Object to primitive conversion",
+            "Primitive to wrapper object conversion",
+            "String conversion"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "Which exception is unchecked?",
+          "options": [
+            "IOException",
+            "SQLException",
+            "NullPointerException",
+            "ClassNotFoundException"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "What does the 'static' keyword mean?",
+          "options": [
+            "Belongs to object",
+            "Belongs to class",
+            "Cannot be changed",
+            "Used for inheritance"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which keyword is used to call parent class constructor?",
+          "options": ["this()", "parent()", "super()", "base()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "What is runtime polymorphism?",
+          "options": [
+            "Method overloading",
+            "Method overriding",
+            "Constructor chaining",
+            "Encapsulation"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which collection class is synchronized?",
+          "options": ["ArrayList", "HashMap", "Vector", "HashSet"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "What is garbage collection?",
+          "options": [
+            "Manual memory cleanup",
+            "Deleting variables",
+            "Automatic memory management",
+            "Removing unused classes"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Which keyword is used to create a thread?",
+          "options": ["thread", "implements", "extends", "synchronized"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "What does 'finally' block do?",
+          "options": [
+            "Handles exception",
+            "Executes only on error",
+            "Always executes",
+            "Stops execution"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which Java feature supports multiple inheritance?",
+          "options": ["Classes", "Interfaces", "Abstract classes", "Objects"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which statement best describes encapsulation?",
+          "options": [
+            "Binding data and methods",
+            "Hiding implementation",
+            "Using inheritance",
+            "Overriding methods"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which method starts a thread execution?",
+          "options": ["run()", "execute()", "start()", "init()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which class is thread-safe?",
+          "options": ["StringBuilder", "StringBuffer", "ArrayList", "HashMap"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which Java keyword is used to prevent method overriding?",
+          "options": ["static", "final", "private", "abstract"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "What is the size of int in Java?",
+          "options": ["2 bytes", "4 bytes", "8 bytes", "Depends on system"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What is the parent class of all Java classes?",
+          "options": ["Main", "System", "Object", "Class"],
+          "correctOption": 2,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "html",
+      "title": "HTML",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does HTML stand for?",
+          "options": [
+            "HyperText Markup Language",
+            "HighText Machine Language",
+            "HyperTool Markup Language",
+            "Hyperlinks and Text Markup Language"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which HTML tag is used to define the structure of a document?",
+          "options": ["<body>", "<head>", "<html>", "<doctype>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which tag is used to insert an image?",
+          "options": ["<image>", "<img>", "<src>", "<pic>"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "Which attribute is used to provide an alternate text for images?",
+          "options": ["title", "src", "alt", "href"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which HTML element is semantic?",
+          "options": ["<div>", "<span>", "<section>", "<b>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "What is the correct HTML5 doctype?",
+          "options": [
+            "<!DOCTYPE html>",
+            "<!DOCTYPE HTML5>",
+            "<DOCTYPE html>",
+            "<HTML DOCTYPE>"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which tag is used to create a hyperlink?",
+          "options": ["<link>", "<a>", "<href>", "<url>"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "Which input type is used to select multiple options?",
+          "options": ["radio", "checkbox", "select", "option"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which attribute opens a link in a new tab?",
+          "options": [
+            "target='_self'",
+            "open='_blank'",
+            "target='_blank'",
+            "newtab"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which tag is used to embed a video?",
+          "options": ["<media>", "<movie>", "<video>", "<embed>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is the purpose of the <meta> tag?",
+          "options": [
+            "Display content",
+            "Add styles",
+            "Provide metadata",
+            "Add scripts"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which HTML tag is used to create a table row?",
+          "options": ["<td>", "<th>", "<tr>", "<table>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which attribute is used to make input mandatory?",
+          "options": ["validate", "required", "placeholder", "checked"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which tag is used for unordered list?",
+          "options": ["<ol>", "<li>", "<ul>", "<list>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which tag is self-closing?",
+          "options": ["<div>", "<p>", "<img>", "<section>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which attribute is used with <form> to specify request type?",
+          "options": ["action", "method", "type", "name"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "What does the <label> tag do?",
+          "options": [
+            "Styles text",
+            "Connects text with input",
+            "Adds placeholder",
+            "Creates heading"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which HTML element is inline by default?",
+          "options": ["<div>", "<p>", "<span>", "<section>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which tag is used to define navigation links?",
+          "options": ["<menu>", "<navbar>", "<nav>", "<header>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "What is the purpose of the <iframe> tag?",
+          "options": [
+            "Embed another webpage",
+            "Create animation",
+            "Load CSS",
+            "Play audio"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which attribute specifies image width?",
+          "options": ["size", "length", "width", "scale"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which tag defines emphasized text?",
+          "options": ["<b>", "<i>", "<em>", "<strong>"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which HTML element is used for page footer?",
+          "options": ["<bottom>", "<footer>", "<end>", "<section>"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which attribute disables an input field?",
+          "options": ["readonly", "disabled", "inactive", "block"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "Which tag is used to include external JavaScript?",
+          "options": ["<js>", "<script>", "<javascript>", "<code>"],
+          "correctOption": 1,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "css",
+      "title": "CSS",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does CSS stand for?",
+          "options": [
+            "Cascading Style Sheets",
+            "Creative Style Sheets",
+            "Computer Style Sheets",
+            "Colorful Style Sheets"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which CSS property controls the text size?",
+          "options": ["font-size", "text-style", "text-size", "font-style"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which selector has the highest specificity?",
+          "options": [
+            "Element selector",
+            "Class selector",
+            "ID selector",
+            "Universal selector"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "What does the z-index property control?",
+          "options": [
+            "Horizontal alignment",
+            "Vertical alignment",
+            "Stack order of elements",
+            "Opacity"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which position value removes element from normal document flow?",
+          "options": ["relative", "static", "absolute", "sticky"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "Which CSS layout module is one-dimensional?",
+          "options": ["Grid", "Flexbox", "Float", "Table"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which property is used to make a website responsive?",
+          "options": ["float", "media queries", "z-index", "overflow"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "Which CSS property adds space inside an element?",
+          "options": ["margin", "padding", "border", "gap"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "What does the overflow: hidden property do?",
+          "options": [
+            "Hides overflowing content",
+            "Scrolls content",
+            "Shows overflow",
+            "Resizes element"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which unit is relative to the viewport width?",
+          "options": ["em", "rem", "vw", "%"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "Which property is used to align items vertically in flexbox?",
+          "options": [
+            "justify-content",
+            "align-items",
+            "align-content",
+            "place-items"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "What does display: none do?",
+          "options": [
+            "Hides element but keeps space",
+            "Hides element and removes space",
+            "Makes element transparent",
+            "Disables element"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which property is used to create animations?",
+          "options": ["transition", "transform", "animation", "motion"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which pseudo-class applies styles when hovering?",
+          "options": [":active", ":hover", ":focus", ":visited"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which property controls the transparency of an element?",
+          "options": ["visibility", "display", "opacity", "alpha"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which CSS property creates rounded corners?",
+          "options": ["corner-radius", "border-radius", "radius", "round"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Which value of position sticks element while scrolling?",
+          "options": ["fixed", "absolute", "sticky", "relative"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which property defines the space between grid items?",
+          "options": ["margin", "padding", "gap", "grid-space"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which property is used to change cursor style?",
+          "options": ["mouse", "pointer", "cursor", "hover"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which shorthand property sets margin on all sides?",
+          "options": ["margin-all", "margin", "padding", "box"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which property is used to control text wrapping?",
+          "options": [
+            "text-wrap",
+            "white-space",
+            "word-break",
+            "overflow-wrap"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which pseudo-element styles the first letter?",
+          "options": [
+            "::first-line",
+            "::first-letter",
+            ":first-letter",
+            "::letter"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which property defines element shadow?",
+          "options": [
+            "shadow",
+            "box-shadow",
+            "element-shadow",
+            "border-shadow"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which CSS property changes element size including padding and border?",
+          "options": ["box-model", "box-sizing", "element-size", "sizing"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "Which property controls the order of flex items?",
+          "options": ["index", "position", "order", "align"],
+          "correctOption": 2,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "angular",
+      "title": "Angular",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Angular?",
+          "options": [
+            "A JavaScript library",
+            "A framework for building SPAs",
+            "A CSS framework",
+            "A backend language"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which language is primarily used with Angular?",
+          "options": ["JavaScript", "TypeScript", "Dart", "Python"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which decorator defines a component?",
+          "options": ["@NgModule", "@Component", "@Injectable", "@Directive"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "What is data binding in Angular?",
+          "options": [
+            "Binding CSS",
+            "Connecting template with component",
+            "Routing data",
+            "Using services"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Which data binding is two-way?",
+          "options": [
+            "Property binding",
+            "Event binding",
+            "Interpolation",
+            "[(ngModel)]"
+          ],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "What is the purpose of services in Angular?",
+          "options": [
+            "UI rendering",
+            "Business logic & data sharing",
+            "Routing",
+            "Styling"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which decorator is used to make a service injectable?",
+          "options": ["@Service", "@Inject", "@Injectable", "@Provider"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What is Dependency Injection?",
+          "options": [
+            "Manual object creation",
+            "Providing dependencies automatically",
+            "Routing mechanism",
+            "Data binding technique"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which directive is used for conditional rendering?",
+          "options": ["*ngFor", "*ngSwitch", "*ngIf", "ngClass"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which directive is used for looping?",
+          "options": ["*ngIf", "*ngFor", "*ngSwitch", "ngStyle"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is the purpose of RouterModule?",
+          "options": [
+            "State management",
+            "HTTP requests",
+            "Navigation between views",
+            "Form validation"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which lifecycle hook runs after component initialization?",
+          "options": [
+            "ngOnChanges",
+            "ngOnInit",
+            "ngAfterViewInit",
+            "ngOnDestroy"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "What does HttpClient return?",
+          "options": ["Promise", "Observable", "Array", "Object"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which RxJS operator transforms data?",
+          "options": ["filter()", "map()", "subscribe()", "tap()"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which module is required for reactive forms?",
+          "options": [
+            "FormsModule",
+            "HttpClientModule",
+            "ReactiveFormsModule",
+            "BrowserModule"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "What is a pipe used for?",
+          "options": [
+            "API calls",
+            "Transforming data in templates",
+            "Routing",
+            "Styling"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Which pipe converts text to uppercase?",
+          "options": ["upper", "uppercase", "toUpper", "caps"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "What is lazy loading?",
+          "options": [
+            "Loading data slowly",
+            "Loading modules on demand",
+            "Delaying API calls",
+            "Caching components"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which guard protects routes?",
+          "options": ["CanLoad", "CanActivate", "Both A and B", "RouteGuard"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "What is ViewChild used for?",
+          "options": [
+            "Access child component or DOM element",
+            "Create component",
+            "Share data",
+            "Apply styles"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which change detection strategy improves performance?",
+          "options": ["Default", "Manual", "OnPush", "Async"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Which file contains application bootstrap logic?",
+          "options": ["index.html", "main.ts", "app.module.ts", "polyfills.ts"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "What is the purpose of ng-content?",
+          "options": [
+            "Routing",
+            "Content projection",
+            "Dependency injection",
+            "Data binding"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which Angular feature helps state management?",
+          "options": ["NgRx", "RxJS", "Services", "All of the above"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What does ngOnDestroy lifecycle hook do?",
+          "options": [
+            "Initialize component",
+            "Cleanup before component removal",
+            "Handle input changes",
+            "Render template"
+          ],
+          "correctOption": 1,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "django",
+      "title": "Django",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Django?",
+          "options": [
+            "A frontend framework",
+            "A Python web framework",
+            "A database",
+            "A JavaScript library"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which architecture pattern does Django follow?",
+          "options": ["MVC", "MVT", "MVVM", "MVP"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Which command is used to create a new Django project?",
+          "options": [
+            "django startproject",
+            "django-admin startproject",
+            "python createproject",
+            "django new project"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "Which file contains project-level settings?",
+          "options": ["views.py", "urls.py", "settings.py", "models.py"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "What is the role of models in Django?",
+          "options": [
+            "Handle HTTP requests",
+            "Define database schema",
+            "Render templates",
+            "Handle routing"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "Which ORM does Django use?",
+          "options": ["SQLAlchemy", "Peewee", "Django ORM", "Hibernate"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which command creates database tables from models?",
+          "options": [
+            "migrate",
+            "makemigrations",
+            "createsuperuser",
+            "runserver"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What does makemigrations do?",
+          "options": [
+            "Apply changes to database",
+            "Create migration files",
+            "Delete database",
+            "Start server"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which file maps URLs to views?",
+          "options": ["views.py", "settings.py", "urls.py", "apps.py"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which command starts the Django development server?",
+          "options": [
+            "django start",
+            "python manage.py start",
+            "python manage.py runserver",
+            "django run"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "What is the default database used by Django?",
+          "options": ["MySQL", "PostgreSQL", "SQLite", "Oracle"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which Django component handles HTTP requests?",
+          "options": ["Model", "Template", "View", "Admin"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "What is Django Admin used for?",
+          "options": [
+            "Frontend design",
+            "Automatic admin interface",
+            "API development",
+            "Routing"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which decorator restricts access to logged-in users only?",
+          "options": ["@secure", "@auth", "@login_required", "@protected"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which file is used to define database models?",
+          "options": ["views.py", "models.py", "admin.py", "forms.py"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "What is a QuerySet in Django?",
+          "options": [
+            "Single database row",
+            "Collection of database objects",
+            "Database schema",
+            "SQL command"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Which method returns all objects from a model?",
+          "options": ["get()", "filter()", "all()", "fetch()"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which template tag is used for loops?",
+          "options": ["{% loop %}", "{% for %}", "{% while %}", "{% repeat %}"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which command creates a superuser?",
+          "options": ["createuser", "addadmin", "createsuperuser", "makeadmin"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which Django feature protects against SQL injection?",
+          "options": ["Middleware", "Templates", "ORM", "Admin"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which file registers models in admin panel?",
+          "options": ["models.py", "views.py", "admin.py", "apps.py"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "What does CSRF stand for?",
+          "options": [
+            "Cross Site Request Forgery",
+            "Client Server Request Failure",
+            "Common Security Request Fix",
+            "Cross Server Request Form"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which middleware provides CSRF protection?",
+          "options": [
+            "AuthMiddleware",
+            "SessionMiddleware",
+            "CsrfViewMiddleware",
+            "SecurityMiddleware"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which command collects static files?",
+          "options": [
+            "collectstatic",
+            "makestatic",
+            "gatherstatic",
+            "buildstatic"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "What is Django REST Framework used for?",
+          "options": [
+            "Template rendering",
+            "Database management",
+            "Building REST APIs",
+            "Authentication only"
+          ],
+          "correctOption": 2,
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "india-gk-advanced",
+      "title": "Current GK - India (Advanced)",
+      "totalQuestions": 25,
+      "totalMarks": 25,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which Article of the Indian Constitution deals with the proclamation of National Emergency?",
+          "options": [
+            "Article 352",
+            "Article 356",
+            "Article 360",
+            "Article 370"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 2,
+          "question": "Which body recommends the distribution of tax revenue between Centre and States?",
+          "options": [
+            "Planning Commission",
+            "Finance Commission",
+            "GST Council",
+            "NITI Aayog"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 3,
+          "question": "Aditya-L1 mission of ISRO is placed at which Lagrange point?",
+          "options": ["L1", "L2", "L3", "L5"],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 4,
+          "question": "Which Schedule of the Indian Constitution contains the Anti-Defection Law?",
+          "options": [
+            "8th Schedule",
+            "9th Schedule",
+            "10th Schedule",
+            "12th Schedule"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 5,
+          "question": "Who is the ex-officio Chairman of the NITI Aayog?",
+          "options": [
+            "President of India",
+            "Vice President of India",
+            "Prime Minister of India",
+            "Finance Minister"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 6,
+          "question": "Which Indian state has the longest coastline?",
+          "options": ["Andhra Pradesh", "Tamil Nadu", "Gujarat", "Maharashtra"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 7,
+          "question": "Which institution controls monetary policy through the MPC?",
+          "options": ["Finance Ministry", "SEBI", "RBI", "NITI Aayog"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 8,
+          "question": "What is the quorum required for Lok Sabha proceedings?",
+          "options": ["One-fourth", "One-fifth", "One-tenth", "One-third"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 9,
+          "question": "Which Indian constitutional amendment introduced GST?",
+          "options": ["99th", "100th", "101st", "102nd"],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 10,
+          "question": "Which river is known as the 'Sorrow of Bihar'?",
+          "options": ["Ganga", "Kosi", "Gandak", "Son"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 11,
+          "question": "Which Article provides for the impeachment of the President of India?",
+          "options": ["Article 56", "Article 61", "Article 72", "Article 75"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 12,
+          "question": "Which ministry implements the Ayushman Bharat scheme?",
+          "options": [
+            "Ministry of Health",
+            "Ministry of Finance",
+            "Ministry of Social Justice",
+            "NITI Aayog"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 13,
+          "question": "Which Indian city hosts the headquarters of ISRO?",
+          "options": [
+            "Hyderabad",
+            "Bengaluru",
+            "Thiruvananthapuram",
+            "Sriharikota"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 14,
+          "question": "Which Fundamental Right is available to both citizens and foreigners?",
+          "options": [
+            "Right to Equality",
+            "Right to Freedom",
+            "Right to Religion",
+            "Cultural Rights"
+          ],
+          "correctOption": 0,
+          "points": 1
+        },
+        {
+          "id": 15,
+          "question": "Which Indian state shares the longest international border?",
+          "options": ["Assam", "West Bengal", "Uttar Pradesh", "Rajasthan"],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 16,
+          "question": "Which committee recommended the establishment of NITI Aayog?",
+          "options": [
+            "Kelkar Committee",
+            "Gadgil Committee",
+            "Arvind Panagariya Committee",
+            "No committee"
+          ],
+          "correctOption": 3,
+          "points": 1
+        },
+        {
+          "id": 17,
+          "question": "Who administers the oath of office to the Prime Minister?",
+          "options": [
+            "Chief Justice of India",
+            "President of India",
+            "Vice President",
+            "Speaker of Lok Sabha"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 18,
+          "question": "Which Indian Act regulates data protection (proposed framework)?",
+          "options": [
+            "IT Act 2000",
+            "Digital India Act",
+            "Digital Personal Data Protection Act",
+            "Cyber Security Act"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 19,
+          "question": "Which Indian port is the largest by cargo handling?",
+          "options": [
+            "Mumbai Port",
+            "JNPT",
+            "Kandla (Deendayal)",
+            "Visakhapatnam"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 20,
+          "question": "Which body resolves disputes related to GST?",
+          "options": [
+            "Supreme Court",
+            "GST Council",
+            "Finance Commission",
+            "RBI"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 21,
+          "question": "Which Schedule of the Constitution lists languages?",
+          "options": [
+            "7th Schedule",
+            "8th Schedule",
+            "9th Schedule",
+            "10th Schedule"
+          ],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 22,
+          "question": "Who controls the Contingency Fund of India?",
+          "options": [
+            "Prime Minister",
+            "Finance Minister",
+            "President of India",
+            "RBI Governor"
+          ],
+          "correctOption": 2,
+          "points": 1
+        },
+        {
+          "id": 23,
+          "question": "Which Indian body audits government expenditure?",
+          "options": ["Finance Commission", "CAG", "NITI Aayog", "SEBI"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 24,
+          "question": "Which Indian mission aims to send humans to space?",
+          "options": ["Chandrayaan", "Gaganyaan", "Aditya-L1", "Vyommitra"],
+          "correctOption": 1,
+          "points": 1
+        },
+        {
+          "id": 25,
+          "question": "Which Article deals with President’s Rule in a state?",
+          "options": [
+            "Article 352",
+            "Article 355",
+            "Article 356",
+            "Article 360"
+          ],
+          "correctOption": 2,
+          "points": 1
+        }
+      ]
+    }
+  ]
+}
