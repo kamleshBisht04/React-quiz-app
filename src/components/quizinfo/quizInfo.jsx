@@ -1,62 +1,40 @@
-import { FaPlay } from "react-icons/fa";
+import React from "react";
+import Button from "../ui/Button";
+import CardTopic from "../ui/CardTopic";
 
-function QuizInfo({ topic, totalQuestions, totalScore, totalTime, onStart }) {
+function QuizInfo() {
   return (
-    <div className="min-h-screen flex justify-center bg-gray-100 pt-10 items-center ">
-      {/* Card */}
-      <div className="w-[90%] h-200  max-w-3xl rounded-xl bg-white px-6 py-10shadow-lg md:px-12">
-        
-        {/* Header */}
-        <div className="mb-6 flex items-center justify-center gap-4">
-          <div className="rounded border-2 border-dashed px-3 py-2 font-bold">
-            XQ
+    <div className="grid h-screen place-items-center bg-gray-100 px-4">
+      {/* Bada Card */}
+      <div className="flex min-h-[65vh] w-full max-w-4xl flex-col items-center justify-center gap-8 rounded-xl bg-white p-16 shadow-lg">
+        <div className="flex h-full w-[60%] flex-col justify-center gap-8">
+          {/* Heading */}
+          <h1 className="text-center text-5xl font-bold">Quiz Information</h1>
+
+          {/* Quiz Details */}
+          <div className="flex flex-col gap-4 text-center text-2xl font-semibold text-gray-700">
+            <p>
+              <span className="font-bold">Selected Quiz Topic:</span> JavaScript
+            </p>
+            <p>
+              <span className="font-bold">Total Questions:</span> 25
+            </p>
+            <p>
+              <span className="font-bold">Total Marks:</span> 25
+            </p>
+            <p>
+              <span className="font-bold">Total Time:</span> 12 Minutes 30 sec
+            </p>
+            <p className="mt-2 bg-stone-100 text-2xl font-semibold text-red-800">
+              To save time, you can skip questions. Skipped questions will show
+              up at the end of the quiz.
+            </p>
           </div>
-          <h2 className="font-serif text-xl">Xeven Quiz</h2>
-        </div>
-
-        {/* Title */}
-        <h1 className="mb-8 text-center text-2xl font-bold text-purple-700">
-          XEVEN QUIZ
-        </h1>
-
-        {/* Info */}
-        <div className="space-y-4 text-center text-base">
-          <p>
-            Selected Quiz Topic:{" "}
-            <span className="font-semibold text-purple-700">{topic}</span>
-          </p>
-
-          <p>Total questions to attempt: {totalQuestions}</p>
-
-          <p>
-            Score in total:{" "}
-            <span className="font-semibold text-purple-700">
-              {totalScore}
-            </span>
-          </p>
-
-          <p>
-            Total time:{" "}
-            <span className="font-semibold text-purple-700">
-              {totalTime} minutes
-            </span>
-          </p>
-
-          <p className="mt-6 text-sm text-gray-600">
-            To save time, you can skip questions. Skipped questions will
-            show up at the end of the quiz.
-          </p>
-        </div>
-
-        {/* Button */}
-        <div className="mt-8 flex justify-center">
-          <button
-            onClick={onStart}
-            className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-purple-700 to-pink-400 px-8 py-3 font-semibold text-white transition hover:scale-105"
-          >
-            <FaPlay />
-            Start
-          </button>
+          {/* Small Button */}
+          <div className="flex h-16 w-full items-center justify-center gap-16">
+            <Button>Back </Button>
+            <Button>Start Quiz </Button>
+          </div>
         </div>
       </div>
     </div>

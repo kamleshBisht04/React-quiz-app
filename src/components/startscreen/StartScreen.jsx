@@ -42,25 +42,29 @@ function StartScreen() {
         </div>
         {/* button section */}
         <div className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 md:gap-10">
-          {Topics.map((topic) => (
-            <button
-              key={topic.id}
-              value={topic.name}
-              onClick={() => setTopic(topic.name)}
-              className="flex h-20 w-50 items-center justify-center gap-4 rounded-md border border-gray-200 bg-stone-50 px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:bg-white hover:shadow-2xl focus:bg-white focus:text-green-600 focus:ring-1 focus:ring-green-600 focus:outline-none active:scale-95 sm:h-20 md:h-24 md:w-55 md:gap-2"
-            >
-              <span className="text-4xl sm:text-5xl md:text-6xl">
-                {topic.icon}
-              </span>
-              <p className="text-2xl">{topic.name}</p>
-            </button>
-          ))}
+          {Topics.map((item) => {
+            const isActive = topic === item.name;
+            return (
+              <button
+                key={item.id}
+                value={item.name}
+                onClick={() => setTopic(item.name)}
+                className={`flex h-20 w-48 items-center justify-center gap-4 rounded-md border px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:shadow-2xl focus:bg-white focus:text-green-600 focus:ring-1 focus:ring-green-600 focus:outline-none active:scale-95 sm:h-20 md:h-24 md:w-56 md:gap-2 ${isActive ? "bg-white text-green-600 ring-1 ring-green-600" : "border-gray-200 bg-stone-50 hover:bg-white"} `}
+              >
+                <span className="text-4xl sm:text-5xl md:text-6xl">
+                  {item.icon}
+                </span>
+                <p className="text-2xl">{item.name}</p>
+              </button>
+            );
+          })}
         </div>
         {/* start section */}
-        <div className="w-full h-38  flex items-center justify-center ">
+        <div className="flex h-40 w-full items-center justify-center">
           <button
-            onClick={() => setScreen("info")}
-            className={`flex h-16 w-64  items-center justify-around rounded-xl px-8 py-3 text-2xl font-semibold text-white shadow-lg transition-all duration-300 ease-in-out ${
+            disabled={!topic}
+            onClick={() => topic && setScreen("info")}
+            className={`flex h-16 w-64 items-center justify-around rounded-xl px-8 py-3 text-2xl font-semibold text-white shadow-lg transition-all duration-300 ease-in-out ${
               topic
                 ? "bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-105 hover:shadow-2xl"
                 : "cursor-not-allowed bg-gray-300"
