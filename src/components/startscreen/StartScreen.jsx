@@ -43,12 +43,12 @@ function StartScreen() {
         {/* button section */}
         <div className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 md:gap-10">
           {Topics.map((item) => {
-            const isActive = topic === item.name;
+            const isActive = topic?.id === item.id;;
             return (
               <button
                 key={item.id}
                 value={item.name}
-                onClick={() => setTopic(item.name)}
+                onClick={() => setTopic(item)}
                 className={`flex h-20 w-48 items-center justify-center gap-4 rounded-md border px-5 py-4 text-lg font-semibold shadow transition-all duration-200 hover:scale-105 hover:shadow-2xl focus:bg-white focus:text-green-600 focus:ring-1 focus:ring-green-600 focus:outline-none active:scale-95 sm:h-20 md:h-24 md:w-56 md:gap-2 ${isActive ? "bg-white text-green-600 ring-1 ring-green-600" : "border-gray-200 bg-stone-50 hover:bg-white"} `}
               >
                 <span className="text-4xl sm:text-5xl md:text-6xl">

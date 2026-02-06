@@ -1,18 +1,31 @@
-import React from "react";
+import { useQuiz } from "../../context/QuizContext";
 import Button from "../ui/Button";
 import CardTopic from "../ui/CardTopic";
 
 function QuizInfo() {
+  const { setTopic, setScreen } = useQuiz();
+
+  const handleBack = () => {
+    setTopic(null);
+    setScreen("start");
+  };
+
+  const handleStart = () => {
+    setScreen("quiz");
+  };
   return (
     <div className="grid h-screen place-items-center bg-gray-100 px-4">
       {/* Bada Card */}
-      <div className="flex min-h-[65vh] w-full max-w-4xl flex-col items-center justify-center gap-8 rounded-xl bg-white p-16 shadow-lg">
-        <div className="flex h-full w-[60%] flex-col justify-center gap-8">
-          {/* Heading */}
-          <h1 className="text-center text-5xl font-bold">Quiz Information</h1>
+      <div className="flex min-h-[70vh] w-full max-w-4xl flex-col items-center rounded-xl bg-white p-16 shadow-lg">
+        <div className="flex h-full w-[60%] flex-col justify-center gap-4">
+          <div className="flex h-48 w-full flex-col items-center justify-center gap-6">
+            <CardTopic />
+            {/* Heading */}
+            <h1 className="text-center text-5xl font-bold">Quiz Information</h1>
+          </div>
 
           {/* Quiz Details */}
-          <div className="flex flex-col gap-4 text-center text-2xl font-semibold text-gray-700">
+          <div className="flex flex-col gap-8 text-center text-2xl font-semibold text-gray-700">
             <p>
               <span className="font-bold">Selected Quiz Topic:</span> JavaScript
             </p>
@@ -31,9 +44,9 @@ function QuizInfo() {
             </p>
           </div>
           {/* Small Button */}
-          <div className="flex h-16 w-full items-center justify-center gap-16">
-            <Button>Back </Button>
-            <Button>Start Quiz </Button>
+          <div className="flex h-32 w-full items-center justify-center gap-16">
+            <Button onClick={handleBack}>Back</Button>
+            <Button onClick={handleStart}>Start Quiz </Button>
           </div>
         </div>
       </div>
