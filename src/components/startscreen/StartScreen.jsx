@@ -1,8 +1,7 @@
-import logo from "../../assets/logo.png";
-import quize from "../../assets/quize.jpg";
 import { Topics } from "../../constant/const";
-import { useQuiz } from "../../context/QuizContext";
+import { useQuiz } from "../../context/QuizProvider";
 import { FaGooglePlay } from "react-icons/fa6";
+import Header from "../ui/Header";
 
 function StartScreen() {
   const { topic, setTopic, setScreen } = useQuiz();
@@ -12,23 +11,7 @@ function StartScreen() {
       <div className="mx-auto flex h-[90vh] w-[70%] flex-col items-center gap-10 md:mt-16">
         {/* logo */}
         <div className="flex w-full items-center justify-center gap-2">
-          <img
-            className="h-16 w-auto sm:h-20 md:h-24"
-            src={logo}
-            alt="quiz logo"
-          />
-          <p>
-            <strong className="sm:text-3xl md:text-5xl lg:text-6xl">
-              <span className="text-yellow-300 sm:text-6xl md:text-7xl">I</span>
-              ntellect
-            </strong>
-          </p>
-
-          <img
-            className="h-12 w-auto sm:h-20 md:h-24"
-            src={quize}
-            alt="quiz logo"
-          />
+          <Header size="lg" />
         </div>
         {/* welcome section */}
         <div className="flex flex-col items-center justify-center gap-5 md:gap-16">
@@ -43,7 +26,7 @@ function StartScreen() {
         {/* button section */}
         <div className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 md:gap-10">
           {Topics.map((item) => {
-            const isActive = topic?.id === item.id;;
+            const isActive = topic?.id === item.id;
             return (
               <button
                 key={item.id}

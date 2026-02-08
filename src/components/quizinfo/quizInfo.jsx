@@ -1,6 +1,6 @@
-import { useQuiz } from "../../context/QuizContext";
+import { useQuiz } from "../../context/QuizProvider";
 import Button from "../ui/Button";
-import CardTopic from "../ui/CardTopic";
+import CardHeader from "../ui/CardHeader";
 
 function QuizInfo() {
   const { setTopic, setScreen } = useQuiz();
@@ -16,10 +16,11 @@ function QuizInfo() {
   return (
     <div className="grid h-screen place-items-center bg-gray-100 px-4">
       {/* Bada Card */}
+
       <div className="flex min-h-[70vh] w-full max-w-4xl flex-col items-center rounded-xl bg-white p-16 shadow-lg">
-        <div className="flex h-full w-[60%] flex-col justify-center gap-4">
-          <div className="flex h-48 w-full flex-col items-center justify-center gap-6">
-            <CardTopic />
+        <div className="flex h-full w-[60%] flex-col justify-center gap-6">
+          <div className="flex h-64 w-full flex-col items-center justify-center gap-6">
+            <CardHeader />
             {/* Heading */}
             <h1 className="text-center text-5xl font-bold">Quiz Information</h1>
           </div>
