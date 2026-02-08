@@ -26,3 +26,6 @@ export const Topics = [
     icon: <GiGiftOfKnowledge color="#8B5CF6" />,
   },
 ];
+
+ export const labels = ["A", "B", "C", "D"];
+

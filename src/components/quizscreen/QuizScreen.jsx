@@ -2,6 +2,7 @@ import { LuAlarmClock } from "react-icons/lu";
 import CardHeader from "../ui/CardHeader";
 import Button from "../ui/Button";
 import Header from "../ui/Header";
+import { labels } from "../../constant/const";
 
 function QuizScreen() {
   const options = [
@@ -34,21 +35,27 @@ function QuizScreen() {
         </div>
 
         {/* OPTIONS */}
-        <div className="mt-6 flex w-full max-w-5xl flex-col gap-6">
+        <div className="mt-6 flex w-full max-w-5xl flex-col items-start gap-6">
           {options.map((option, index) => (
             <button
               key={index}
-              className="flex h-16 w-full max-w-3xl items-center justify-start rounded-2xl border border-stone-50 bg-gray-50 px-6 text-lg font-semibold text-blue-950 transition hover:bg-pink-100 sm:h-20 sm:text-xl md:text-2xl"
+              className="flex h-16 w-full max-w-4xl items-center gap-4 rounded-2xl border border-stone-100 bg-gray-50 px-6 text-lg font-semibold text-blue-950 transition hover:bg-pink-100 sm:h-20 sm:text-xl md:text-2xl"
             >
-              {option}
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-purple-200 text-xl font-bold text-purple-800">
+                {labels[index]}
+              </span>
+              <span>{option}</span>
             </button>
           ))}
         </div>
 
         {/* FOOTER */}
-        <div className="flex w-full max-w-5xl flex-col justify-between items-center  sm:h-32 sm:flex-row sm:justify-end">
+        <div className="flex w-full max-w-5xl flex-col items-center gap-6 sm:h-32 sm:flex-row sm:items-center sm:justify-between">
+          {/* Brand / Header */}
           <Header />
-          <div className="flex w-full gap-4 justify-end">
+
+          {/* Buttons */}
+          <div className="flex w-full justify-center gap-4 sm:w-auto sm:justify-end">
             <Button>Previous</Button>
             <Button>Next</Button>
           </div>
