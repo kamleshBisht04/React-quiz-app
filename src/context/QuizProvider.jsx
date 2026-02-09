@@ -78,7 +78,6 @@ function QuizProvider({ children }) {
   const totalQuestions = topicQuestions?.questions?.length || 0;
 
   const lastIndex = totalQuestions - 1;
-  const isLastQuestion = currentQuestionIndex === lastIndex;
 
   return (
     <QuizContext.Provider
@@ -95,7 +94,7 @@ function QuizProvider({ children }) {
         currentQuestionIndex,
         totalQuestions,
         answers,
-        isLastQuestion,
+        lastIndex,
         dispatch,
       }}
     >
