@@ -3,7 +3,8 @@ import Button from "../ui/Button";
 import { useQuiz } from "../../context/QuizProvider";
 
 function Footer() {
-  const { dispatch, currentQuestionIndex, isLast, setScreen } = useQuiz();
+  const { dispatch, currentQuestionIndex, isLastQuestion, setScreen } =
+    useQuiz();
 
   return (
     <div className="flex w-full max-w-5xl flex-col items-center gap-6 sm:h-32 sm:flex-row sm:items-center sm:justify-between">
@@ -20,10 +21,12 @@ function Footer() {
         </Button>
         <Button
           onClick={() =>
-            isLast ? setScreen("result") : dispatch({ type: "NEXT_QUESTION" })
+            isLastQuestion
+              ? setScreen("result")
+              : dispatch({ type: "NEXT_QUESTION" })
           }
         >
-          {currentQuestionIndex === isLast ? "Finish" : "Next"}
+          {isLastQuestion ? "Finish" : "Next"}
         </Button>
       </div>
     </div>

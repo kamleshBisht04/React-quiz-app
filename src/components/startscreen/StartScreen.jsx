@@ -7,7 +7,7 @@ function StartScreen() {
   const { topic, setTopic, setScreen } = useQuiz();
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center bg-white">
       <div className="mx-auto flex h-[90vh] w-[70%] flex-col items-center gap-10 md:mt-16">
         {/* logo */}
         <div className="flex w-full items-center justify-center gap-2">

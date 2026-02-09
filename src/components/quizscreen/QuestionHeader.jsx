@@ -9,7 +9,7 @@ function QuestionHeader() {
     currentQuestion.id < 10 ? `0${currentQuestion.id}` : currentQuestion.id;
   return (
     <div className="flex w-full max-w-5xl flex-col items-center gap-4 sm:h-40 sm:flex-row sm:justify-between">
-      <p className="flex items-center text-5xl font-semibold text-green-600 sm:text-5xl">
+      <p className="flex  items-center text-5xl font-semibold text-green-600 sm:text-5xl">
         <FaArrowAltCircleRight size={16} />
         {questionNo}
         <span className="text-3xl text-gray-300">/{totalQuestions}</span>

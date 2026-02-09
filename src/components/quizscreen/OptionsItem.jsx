@@ -6,6 +6,7 @@ function OptionItem() {
     useQuiz();
   const options = currentQuestion.options;
   const selectedOption = answers[currentQuestionIndex];
+  const correctOption = currentQuestion.correctOption;
 
   return (
     <div className="mt-6 flex w-full max-w-5xl flex-col items-start gap-6">
