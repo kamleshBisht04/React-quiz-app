@@ -11,7 +11,8 @@ const initialState = {
   allQuestions: [],
   status: "loading",
   error: null,
-  index: 0,
+  currentQuestionIndex: 0,
+  answers: {},
 };
 
 function reducer(state, action) {
@@ -24,6 +25,22 @@ function reducer(state, action) {
         error: action.payload,
         status: "error",
       };
+    case "NEXT_QUESTION":
+      return { ...state, currentQuestionIndex: state.currentQuestionIndex + 1 };
+    case "PREV_QUESTION":
+      return {
+        ...state,
+        currentQuestionIndex:
+          state.currentQuestionIndex > 0 ? state.currentQuestionIndex - 1 : 0,
+      };
+    case "SET_ANSWER":
+      return {
+        ...state,
+        answers: {
+          ...state.answers,
+          [state.currentQuestionIndex]: action.payload,
+        },
+      };
 
     default:
       throw new Error("Unknown Action");
@@ -33,10 +50,10 @@ function reducer(state, action) {
 function QuizProvider({ children }) {
   const [screen, setScreen] = useState("start");
   const [topic, setTopic] = useState(null);
-  const [{ allQuestions, status, error,index }, dispatch] = useReducer(
-    reducer,
-    initialState,
-  );
+  const [
+    { allQuestions, status, error, currentQuestionIndex, answers },
+    dispatch,
+  ] = useReducer(reducer, initialState);
 
   useEffect(() => {
     async function fetchQuizData() {
@@ -53,6 +70,15 @@ function QuizProvider({ children }) {
     fetchQuizData();
   }, []);
 
+  const topicQuestions = allQuestions.find((item) => item.id === topic?.id);
+
+  const currentQuestion =
+    topicQuestions?.questions?.[currentQuestionIndex] || null;
+
+  const totalQuestions = topicQuestions?.questions?.length || 0;
+
+  const isLast = currentQuestionIndex === totalQuestions - 1;
+
   return (
     <QuizContext.Provider
       value={{
@@ -60,10 +86,16 @@ function QuizProvider({ children }) {
         setScreen,
         topic,
         setTopic,
-        allQuestions,
         status,
         error,
-        index
+        allQuestions,
+        topicQuestions,
+        currentQuestion,
+        currentQuestionIndex,
+        totalQuestions,
+        answers,
+        isLast,
+        dispatch,
       }}
     >
       {children}

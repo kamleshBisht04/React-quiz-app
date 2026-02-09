@@ -3,7 +3,8 @@ import Button from "../ui/Button";
 import CardHeader from "../ui/CardHeader";
 
 function QuizInfo() {
-  const { setTopic, setScreen } = useQuiz();
+  const { setTopic, setScreen ,topic,totalQuestions} = useQuiz();
+
 
   const handleBack = () => {
     setTopic(null);
@@ -28,16 +29,16 @@ function QuizInfo() {
           {/* Quiz Details */}
           <div className="flex flex-col gap-8 text-center text-2xl font-semibold text-gray-700">
             <p>
-              <span className="font-bold">Selected Quiz Topic:</span> JavaScript
+              <span className="font-bold">Selected Quiz Topic: </span> {topic.name}
             </p>
             <p>
-              <span className="font-bold">Total Questions:</span> 25
+              <span className="font-bold">Total Questions: </span> {totalQuestions}
             </p>
             <p>
-              <span className="font-bold">Total Marks:</span> 25
+              <span className="font-bold">Total Marks: </span> 25
             </p>
             <p>
-              <span className="font-bold">Total Time:</span> 12 Minutes 30 sec
+              <span className="font-bold">Total Time: </span> 12 Minutes 30 sec
             </p>
             <p className="mt-2 bg-stone-100 text-2xl font-semibold text-red-800">
               To save time, you can skip questions. Skipped questions will show
