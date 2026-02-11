@@ -51,7 +51,6 @@ function reducer(state, action) {
       return {
         ...state,
         currentQuestionIndex: state.currentQuestionIndex + 1,
-        secondRemaining: state.secondRemaining - 1,
       };
     case "PREV_QUESTION":
       return {
@@ -72,6 +71,13 @@ function reducer(state, action) {
         ...state,
         secondRemaining:
           state.secondRemaining > 0 ? state.secondRemaining - 1 : 0,
+        status: state.secondRemaining === 1 ? "finished" : state.status,
+      };
+
+    case "FINISH":
+      return {
+        ...state,
+        status: "finished",
       };
 
     default:
@@ -81,7 +87,15 @@ function reducer(state, action) {
 
 function QuizProvider({ children }) {
   const [
-    { topic, allQuestions, status, error, currentQuestionIndex, answers ,secondRemaining},
+    {
+      topic,
+      allQuestions,
+      status,
+      error,
+      currentQuestionIndex,
+      answers,
+      secondRemaining,
+    },
     dispatch,
   ] = useReducer(reducer, initialState);
 

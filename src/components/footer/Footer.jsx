@@ -3,12 +3,12 @@ import Button from "../ui/Button";
 import { useQuiz } from "../../context/QuizProvider";
 
 function Footer() {
-  const { dispatch, currentQuestionIndex, lastIndex, setScreen } = useQuiz();
+  const { dispatch, currentQuestionIndex, lastIndex } = useQuiz();
 
   function handleSubmit() {
-    setScreen("result");
+    dispatch({ type: "FINISH" });
   }
-
+  
   return (
     <div className="flex w-full max-w-5xl flex-col items-center gap-6 focus:ring-0 focus:outline-none sm:h-56 sm:flex-row sm:items-center sm:justify-between">
       {/* Brand / Header */}
@@ -24,7 +24,9 @@ function Footer() {
         </Button>
         <Button
           disabled={currentQuestionIndex === lastIndex}
-          onClick={() => dispatch({ type: "NEXT_QUESTION" })}
+          onClick={() =>
+            dispatch({ type: "NEXT_QUESTION", payload: lastIndex })
+          }
         >
           Next
         </Button>

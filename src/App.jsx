@@ -1,6 +1,6 @@
 import QuizInfo from "./components/quizinfo/QuizInfo";
 import QuizScreen from "./components/quizscreen/QuizScreen";
-// import ResultScreen from "./components/resultscreen/ResultScreen";
+import ResultScreen from "./components/resultscreen/ResultScreen";
 import StartScreen from "./components/startscreen/StartScreen";
 import Loader from "./components/loader/Loader";
 import { useQuiz } from "./context/QuizProvider";
@@ -13,7 +13,7 @@ function App() {
       {status === "ready" && <StartScreen />}
       {status === "info" && <QuizInfo />}
       {status === "active" && <QuizScreen />}
-      {screen === "result" && <ResultScreen />}
+      {status === "finished" && <ResultScreen />}
     </main>
   );
 }
