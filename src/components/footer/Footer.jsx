@@ -10,7 +10,7 @@ function Footer() {
   }
 
   return (
-    <div className="flex w-full max-w-5xl flex-col items-center gap-6 focus:ring-0 focus:outline-none sm:h-32 sm:flex-row sm:items-center sm:justify-between">
+    <div className="flex w-full max-w-5xl flex-col items-center gap-6 focus:ring-0 focus:outline-none sm:h-56 sm:flex-row sm:items-center sm:justify-between">
       {/* Brand / Header */}
       <Header />
 

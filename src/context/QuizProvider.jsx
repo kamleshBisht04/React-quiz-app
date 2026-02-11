@@ -1,18 +1,17 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 const QuizContext = createContext();
+
+const SEC_PER_QUESTION = 30;
+// status: "loading" | "ready" | "info" | "active" | "finished"
 
 const initialState = {
   allQuestions: [],
   status: "loading",
   error: null,
+  topic: null,
   currentQuestionIndex: 0,
   answers: {},
+  secondRemaining: 0,
 };
 
 function reducer(state, action) {
@@ -25,8 +24,35 @@ function reducer(state, action) {
         error: action.payload,
         status: "error",
       };
+
+    case "SELECT_TOPIC":
+      return {
+        ...state,
+        topic: action.payload,
+        status: action.payload ? "info" : "ready", // if null → ready, else info
+        currentQuestionIndex: 0,
+        answers: {},
+        // secondRemaining: 0,
+      };
+
+    case "START": {
+      // console.log(state);
+      const totalQuestions =
+        state.allQuestions.find((item) => item.id === state.topic?.id)
+          ?.questions?.length || 0;
+      return {
+        ...state,
+        status: "active",
+        secondRemaining: totalQuestions * SEC_PER_QUESTION,
+      };
+    }
+
     case "NEXT_QUESTION":
-      return { ...state, currentQuestionIndex: state.currentQuestionIndex + 1 };
+      return {
+        ...state,
+        currentQuestionIndex: state.currentQuestionIndex + 1,
+        secondRemaining: state.secondRemaining - 1,
+      };
     case "PREV_QUESTION":
       return {
         ...state,
@@ -41,6 +67,12 @@ function reducer(state, action) {
           [state.currentQuestionIndex]: action.payload,
         },
       };
+    case "TICK":
+      return {
+        ...state,
+        secondRemaining:
+          state.secondRemaining > 0 ? state.secondRemaining - 1 : 0,
+      };
 
     default:
       throw new Error("Unknown Action");
@@ -48,10 +80,8 @@ function reducer(state, action) {
 }
 
 function QuizProvider({ children }) {
-  const [screen, setScreen] = useState("start");
-  const [topic, setTopic] = useState(null);
   const [
-    { allQuestions, status, error, currentQuestionIndex, answers },
+    { topic, allQuestions, status, error, currentQuestionIndex, answers ,secondRemaining},
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -82,10 +112,7 @@ function QuizProvider({ children }) {
   return (
     <QuizContext.Provider
       value={{
-        screen,
-        setScreen,
         topic,
-        setTopic,
         status,
         error,
         allQuestions,
@@ -95,6 +122,7 @@ function QuizProvider({ children }) {
         totalQuestions,
         answers,
         lastIndex,
+        secondRemaining,
         dispatch,
       }}
     >

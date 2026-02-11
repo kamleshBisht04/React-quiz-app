@@ -3,33 +3,21 @@ import Button from "../ui/Button";
 import CardHeader from "../ui/CardHeader";
 
 function QuizInfo() {
-  const { setTopic, setScreen ,topic,totalQuestions} = useQuiz();
+  const { topic, totalQuestions, dispatch } = useQuiz();
 
-
-  const handleBack = () => {
-    setTopic(null);
-    setScreen("start");
-  };
-
-  const handleStart = () => {
-    setScreen("quiz");
-  };
   return (
     <div className="grid h-screen place-items-center bg-gray-100 px-4">
-      {/* Bada Card */}
-
       <div className="flex min-h-[70vh] w-full max-w-4xl flex-col items-center rounded-xl bg-white p-16 shadow-lg">
         <div className="flex h-full w-[60%] flex-col justify-center gap-6">
           <div className="flex h-64 w-full flex-col items-center justify-center gap-6">
             <CardHeader />
-            {/* Heading */}
             <h1 className="text-center text-5xl font-bold">Quiz Information</h1>
           </div>
 
-          {/* Quiz Details */}
           <div className="flex flex-col gap-8 text-center text-2xl font-semibold text-gray-700">
             <p>
-              <span className="font-bold">Selected Quiz Topic: </span> {topic.name}
+              <span className="font-bold">Selected Quiz Topic: </span>{" "}
+              {topic?.name || "No topic selected"}
             </p>
             <p>
               <span className="font-bold">Total Questions: </span> {totalQuestions}
@@ -45,10 +33,14 @@ function QuizInfo() {
               up at the end of the quiz.
             </p>
           </div>
-          {/* Small Button */}
+
           <div className="flex h-32 w-full items-center justify-center gap-16">
-            <Button onClick={handleBack}>Back</Button>
-            <Button onClick={handleStart}>Start Quiz </Button>
+            <Button onClick={() => dispatch({ type: "SELECT_TOPIC", payload: null })}>
+              Back
+            </Button>
+            <Button onClick={() => dispatch({ type: "START" })}>
+              Start Quiz
+            </Button>
           </div>
         </div>
       </div>
