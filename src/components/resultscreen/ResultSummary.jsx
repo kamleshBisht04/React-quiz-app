@@ -60,7 +60,7 @@ function ResultSummary() {
         <Stat label="Wrong" value={wrong} color="text-red-600" />
       </div>
 
-      <div className="mt-12 flex w-200 justify-between">
+      <div className="mt-12 flex md:w-200  justify-between">
         <Button
           onClick={() => dispatch({ type: "SELECT_TOPIC", payload: null })}
         >
