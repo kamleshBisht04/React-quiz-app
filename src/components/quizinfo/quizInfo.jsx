@@ -6,7 +6,6 @@ import CardHeader from "../ui/CardHeader";
 function QuizInfo() {
   const { topic, totalQuestions, dispatch, totaltime } = useQuiz();
   const [min, sec] = formatTime(totaltime);
-  console.log(min, sec);
 
   return (
     <div className="grid h-screen place-items-center bg-gray-100 px-4">
