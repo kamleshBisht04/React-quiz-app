@@ -80,6 +80,12 @@ function reducer(state, action) {
         status: "finished",
       };
 
+    case "GOTO_QUESTION":
+      return {
+        ...state,
+        currentQuestionIndex: action.payload,
+      };
+
     default:
       throw new Error("Unknown Action");
   }

@@ -8,6 +8,7 @@ import { FaCss3 } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import { GiGiftOfKnowledge } from "react-icons/gi";
+import clickSoundFile from "../assets/sound/clickSound.mp3";
 
 export const Topics = [
   { id: "react", name: "React", icon: <FaReact color="#61DAFB" /> },
@@ -32,7 +33,6 @@ export const Topics = [
 
 export const labels = ["A", "B", "C", "D"];
 
-
 export function formatTime(seconds) {
   const min = Math.floor(seconds / 60);
   const sec = seconds % 60;
@@ -40,3 +40,11 @@ export function formatTime(seconds) {
     .toString()
     .padStart(2, "0")}`;
 }
+
+const clickAudio = new Audio(clickSoundFile);
+clickAudio.volume = 0.01;
+export function clickSoundPlay() {
+  clickAudio.currentTime = 0;
+  clickAudio.play();
+}
+

@@ -8,3 +8,5 @@ export function getOptionClass({ selectedOption, correctOption, index }) {
 
   return "option option-default";
 }
+
+

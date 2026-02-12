@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Topics } from "../../constant/const";
+import { clickSoundPlay, Topics } from "../../constant/const";
 import { useQuiz } from "../../context/QuizProvider";
 import { FaGooglePlay } from "react-icons/fa6";
 import Header from "../ui/Header";
@@ -33,7 +33,7 @@ function StartScreen() {
               <div
                 key={item.id}
                 onClick={() => setTempTopic(item)} // CSS selection
-                className={`flex h-20 w-52 cursor-pointer items-center justify-center gap-4 rounded-xl border-2 border-gray-100  bg-white px-5 py-4 text-lg font-semibold transition-all md:h-24 md:w-56 ${isActive ? "border-b-6 border-b-green-700 bg-blue-100" : " "} `}
+                className={`flex h-20 w-52 cursor-pointer items-center justify-center gap-4 rounded-xl border-2 border-gray-100 bg-white px-5 py-4 text-lg font-semibold transition-all md:h-24 md:w-56 ${isActive ? "border-b-6 border-b-green-700 bg-blue-100" : " "} `}
               >
                 <span className="text-4xl sm:text-5xl md:text-6xl">
                   {item.icon}

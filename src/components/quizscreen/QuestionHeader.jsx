@@ -22,7 +22,7 @@ function QuestionHeader() {
     [dispatch],
   );
   return (
-    <div className="flex w-full max-w-5xl flex-col items-center gap-4 sm:h-40 sm:flex-row sm:justify-between">
+    <div className="flex h-32 w-115 md:w-5xl   items-center gap-4 sm:h-40  sm:justify-between">
       {/* Question Number */}
       <p className="flex w-24 items-center justify-center gap-2 text-5xl font-semibold text-green-600 sm:text-5xl">
         <FaArrowAltCircleRight size={28} />

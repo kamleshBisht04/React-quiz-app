@@ -7,7 +7,7 @@ function CardHeader() {
   return (
     <div className="flex w-64 items-center justify-center gap-4">
       {/* Icon */}
-      <div className="transform text-8xl transition-transform duration-500 ease-out hover:-translate-y-2 md:text-9xl lg:text-[5rem]">
+      <div className="transform transition-transform duration-500 ease-out hover:-translate-y-2 md:text-9xl lg:text-[5rem] text-4xl">
         {topic.icon}
       </div>
 
