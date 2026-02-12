@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { clickSoundPlay, Topics } from "../../constant/const";
+import { Topics } from "../../constant/const";
 import { useQuiz } from "../../context/QuizProvider";
 import { FaGooglePlay } from "react-icons/fa6";
 import Header from "../ui/Header";

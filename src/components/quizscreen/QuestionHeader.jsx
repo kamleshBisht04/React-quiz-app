@@ -10,6 +10,10 @@ function QuestionHeader() {
     useQuiz();
   const questionNo =
     currentQuestion.id < 10 ? `0${currentQuestion.id}` : currentQuestion.id;
+  const [min, sec] = formatTime(secondRemaining);
+  const totalTime = `${min.toString().padStart(2, "0")}:${sec
+    .toString()
+    .padStart(2, "0")}`;
 
   useEffect(
     function () {
@@ -22,7 +26,7 @@ function QuestionHeader() {
     [dispatch],
   );
   return (
-    <div className="flex h-32 w-115 md:w-5xl   items-center gap-4 sm:h-40  sm:justify-between">
+    <div className="flex h-32 w-115 items-center gap-4 sm:h-40 sm:justify-between md:w-5xl">
       {/* Question Number */}
       <p className="flex w-24 items-center justify-center gap-2 text-5xl font-semibold text-green-600 sm:text-5xl">
         <FaArrowAltCircleRight size={28} />
@@ -34,10 +38,10 @@ function QuestionHeader() {
       <CardHeader />
 
       {/* Timer */}
-      <div className="flex w-32  items-center justify-center gap-2 text-emerald-700  ">
-        <LuAlarmClock size={24}  />
-        <span className=" w-20  text-3xl font-semibold text-fuchsia-800  ">
-          {formatTime(secondRemaining)}
+      <div className="flex w-32 items-center justify-center gap-2 text-emerald-700">
+        <LuAlarmClock size={24} />
+        <span className="w-20 text-3xl font-semibold text-fuchsia-800">
+          {totalTime}
         </span>
       </div>
     </div>

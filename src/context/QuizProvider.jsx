@@ -32,7 +32,6 @@ function reducer(state, action) {
         status: action.payload ? "info" : "ready", // if null → ready, else info
         currentQuestionIndex: 0,
         answers: {},
-        // secondRemaining: 0,
       };
 
     case "START": {
@@ -120,12 +119,16 @@ function QuizProvider({ children }) {
     fetchQuizData();
   }, []);
 
+
+
+
   const topicQuestions = allQuestions.find((item) => item.id === topic?.id);
-
+  
   const currentQuestion =
-    topicQuestions?.questions?.[currentQuestionIndex] || null;
-
+  topicQuestions?.questions?.[currentQuestionIndex] || null;
+  
   const totalQuestions = topicQuestions?.questions?.length || 0;
+  const totaltime= totalQuestions * SEC_PER_QUESTION;
 
   const lastIndex = totalQuestions - 1;
 
@@ -143,6 +146,7 @@ function QuizProvider({ children }) {
         answers,
         lastIndex,
         secondRemaining,
+        totaltime,
         dispatch,
       }}
     >
