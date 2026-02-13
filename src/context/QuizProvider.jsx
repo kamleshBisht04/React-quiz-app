@@ -1,4 +1,7 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
+import { db } from "../firebase" // firebase.js se
+import { collection, getDocs } from "firebase/firestore";
+
 const QuizContext = createContext();
 
 const SEC_PER_QUESTION = 30;
@@ -104,21 +107,39 @@ function QuizProvider({ children }) {
     dispatch,
   ] = useReducer(reducer, initialState);
 
-  useEffect(() => {
-    async function fetchQuizData() {
-      try {
-        const res = await fetch(`http://localhost:9000/quizData`);
-        if (!res.ok) throw new Error("Failed to load JSON");
-        const data = await res.json();
-        // console.log(data);
-        dispatch({ type: "DATA_RECEIVED", payload: data });
-      } catch (err) {
-        dispatch({ type: "DATA_ERROR", payload: err.message });
-      }
-    }
-    fetchQuizData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchQuizData() {
+  //     try {
+  //       const res = await fetch(`http://localhost:9000/quizData`);
+  //       if (!res.ok) throw new Error("Failed to load JSON");
+  //       const data = await res.json();
+  //       // console.log(data);
+  //       dispatch({ type: "DATA_RECEIVED", payload: data });
+  //     } catch (err) {
+  //       dispatch({ type: "DATA_ERROR", payload: err.message });
+  //     }
+  //   }
+  //   fetchQuizData();
+  // }, []);
 
+
+  useEffect(() => {
+  async function fetchQuizData() {
+    try {
+      const quizCol = collection(db, "quizzes"); // Firestore collection name
+      const quizSnapshot = await getDocs(quizCol);
+      const data = quizSnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      dispatch({ type: "DATA_RECEIVED", payload: data });
+    } catch (err) {
+      dispatch({ type: "DATA_ERROR", payload: err.message });
+    }
+  }
+
+  fetchQuizData();
+}, []);
 
 
 
