@@ -7,8 +7,8 @@ function Question() {
   return (
     <div className="md:w-full h-20 flex items-center justify-between max-w-5xl self-center px-2 w-[90%] gap-2">
       {/* Fixed Question Box */}
-      <div className="h-20 md:w-full max-w-5xl w-105 bg-white p-4 flex  items-center">
-        <h1 className="text-lg   leading-relaxed font-semibold text-blue-950 sm:text-xl lg:text-3xl ">
+      <div className="h-20 md:w-full max-w-5xl w-130 bg-white p-4 flex  items-center">
+        <h1 className="text-lg leading-relaxed font-semibold text-blue-950 sm:text-xl lg:text-3xl ">
           {currentQuestion.question}
         </h1>
       </div>
