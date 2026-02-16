@@ -2,7 +2,7 @@ import Loader from "./components/loader/Loader";
 import StartScreen from "./components/startScreen/StartScreen";
 import ResultScreen from "./components/resultScreen/ResultScreen";
 import { useQuiz } from "./context/QuizProvider";
-import QuizInfo from "./components/quizinfo/QuizInfo"
+import QuizInfo from "./components/quizInfo/QuizInfo"
 import QuizScreen from "./components/quizScreen/QuizScreen";
 
 
