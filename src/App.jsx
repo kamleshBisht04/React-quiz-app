@@ -3,7 +3,7 @@ import StartScreen from "./components/startScreen/StartScreen";
 import ResultScreen from "./components/resultScreen/ResultScreen";
 import { useQuiz } from "./context/QuizProvider";
 import QuizInfo from "./components/quizinfo/QuizInfo"
-import QuizScreen from "./components/quizScreen/QuizScreen";
+import QuizScreen from "./components/quizscreen/QuizScreen";
 
 
 function App() {

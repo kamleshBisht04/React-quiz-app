@@ -19,7 +19,7 @@ function ResultScreen() {
             return (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-2xl border border-gray-300 bg-white p-6 shadow-md sm:p-8"
+                className="flex flex-col gap-4 rounded-2xl border border-gray-300 bg-white p-6 shadow-md sm:p-8 "
               >
                 <h2 className="mb-5 text-lg font-semibold text-blue-950 sm:text-xl">
                   Q{index + 1}. {q.question}
