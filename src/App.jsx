@@ -1,9 +1,10 @@
 import Loader from "./components/loader/Loader";
-import StartScreen from "./components/startscreen/StartScreen";
-import QuizScreen from "./components/quizscreen/QuizScreen";
-import ResultScreen from "./components/resultscreen/ResultScreen";
+import StartScreen from "./components/startScreen/StartScreen";
+import ResultScreen from "./components/resultScreen/ResultScreen";
 import { useQuiz } from "./context/QuizProvider";
 import QuizInfo from "./components/quizinfo/QuizInfo"
+import QuizScreen from "./components/quizScreen/QuizScreen";
+
 
 function App() {
   const { status } = useQuiz();
